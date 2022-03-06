@@ -25,7 +25,7 @@ class Routes {
 
     const uploadHandler = new UploadHandler(this.#io, socketId);
 
-    const onFinish = (response, redirectTo) => {
+    const onFinish = (response, redirectTo) => () => {
       response.writeHead(303, {
         Connection: "close",
         Location: `${redirectTo}?msg=Files updated with success!`,

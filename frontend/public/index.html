@@ -19,7 +19,7 @@
   <div class="row">
     <div class="col-md-4">
       <h3>Upload files!</h3>
-      <form id="form" method="POST" action="multpart/form-data">
+      <form id="form" method="POST" enctype="multipart/form-data">
         <div class="form-group">
           <label for="field">Files</label>
           <input type="file" class="form-control" name="file" id="file" onchange="showSize()">
