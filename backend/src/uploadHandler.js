@@ -13,7 +13,7 @@ class UploadHandler {
     this.#socketId = socketId;
   }
 
-  registerEvent(headers, onFinish) {
+  registerEvents(headers, onFinish) {
     const busboy = new Busboy({ headers });
 
     busboy.on('file', this.#onFile.bind(this));

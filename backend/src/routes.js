@@ -34,7 +34,7 @@ class Routes {
       response.end();
     };
 
-    const busboyInstance = uploadHandler.registerEvent(
+    const busboyInstance = uploadHandler.registerEvents(
       headers,
       onFinish(response, redirectTo)
     );
